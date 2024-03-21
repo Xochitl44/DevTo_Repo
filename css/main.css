@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(245, 245, 245);
 }
 
 .contenedor {
@@ -14,25 +14,88 @@ body {
   min-height: 100vh;
 }
 
-.aside1 {
-  background-color: rgb(233, 233, 233);
+.devSearchFlex {
+  margin-bottom: 0;
+  margin-left: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.containerSearch {
+  top: 10px;
+  left: 85px;
+}
+
+.inputDiv {
+  position: relative;
+  margin-left: 10px;
+}
+
+.lupaDiv {
+  position: absolute;
+  left: 460px;
+  top: 22px;
+}
+
+.logoDev {
+  height: 50px;
+  width: 60px;
+}
+
+.searchBar {
+  height: 40px;
+  width: 400px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.buttonLogIn {
+  border: none;
+  background: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.buttonLogIn .buttonLogIn:hover {
+  background: blue;
+  opacity: 40%;
+  color: blue;
+}
+
+.btnAcc {
+  border: 1px solid blue;
+  border-radius: 4px;
+  background-color: rgb(245, 245, 245);
+  color: blue;
+  height: 38px;
+  width: 128px;
+}
+
+.navBarBtns {
+  margin-left: auto;
+}
+
+.aside1,
+.aside2 {
+  background-color: rgb(245, 245, 245);
   flex: 1;
   flex-grow: 1;
   min-width: 20%;
   gap: 30px;
 }
-.aside1 .card {
+.aside1 .card,
+.aside2 .card {
   background-color: white;
   border: 2px solid #ccc;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.aside1 .card .cardContent {
+.aside1 .card .cardContent,
+.aside2 .card .cardContent {
   padding: 10px;
   margin: 10px;
 }
-.aside1 .card h3 {
+.aside1 .card h3,
+.aside2 .card h3 {
   font-weight: lighter;
 }
 
@@ -171,8 +234,8 @@ header ul a {
   color: green;
 }
 .sectionMain .buttonsDiv .btn:hover {
-  background: purple;
-  opacity: 40%;
+  background: rgba(130, 5, 146, 0.1);
+  opacity: 1;
   color: black;
   border: 1px solid purple;
   border-radius: 4%;
@@ -230,8 +293,16 @@ header ul a {
   }
 }
 .aside2 {
-  background-color: green;
+  background-color: whitesmoke;
   flex: 1;
   flex-grow: 2;
   min-width: 25%;
+}
+
+.contenedor1 {
+  background-color: whitesmoke;
+  margin: 0 20px;
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 1px;
 }/*# sourceMappingURL=main.css.map */

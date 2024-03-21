@@ -1,5 +1,5 @@
 // Aqui van las variables
-$body-bg-color: rgb(233, 233, 233);
+$body-bg-color: rgb(245, 245, 245);
 $card-bg-color: white;
 $card-list-margin-bottom: 10px;
 
@@ -26,17 +26,79 @@ body {
     display: flex;
     width: 100%;
     min-height: 100vh;
-
 }
 
 
 
+
 // CSS de NavBar DAVID
+.devSearchFlex {
+    margin-bottom: 0;
+    margin-left: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.containerSearch {
+    top: 10px;
+    left: 85px;
+}
+
+.inputDiv {
+    position: relative;
+    margin-left: 10px;
+}
+
+.lupaDiv {
+    position: absolute;
+    left: 460px;
+    top: 22px;
+
+}
+
+.logoDev {
+    height: 50px;
+    width: 60px;
+}
+
+.searchBar {
+    height: 40px;
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.buttonLogIn {
+    border: none;
+    background: transparent;
+    font-family: $font-family;
+
+    .buttonLogIn:hover {
+        background: blue;
+        opacity: 40%;
+        color: blue;
+    }
+}
+
+.btnAcc {
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: $body-bg-color;
+    color: blue;
+    height: 38px;
+    width: 128px;
+}
+
+.navBarBtns {
+    margin-left: auto;
+}
+
 
 
 // CSS de Aside izquierda AKIRA
 
-.aside1 {
+.aside1,
+.aside2 {
     background-color: $body-bg-color;
     flex: 1;
     flex-grow: 1;
@@ -227,8 +289,8 @@ header {
         }
 
         .btn:hover {
-            background: purple;
-            opacity: 40%;
+            background: rgb(130 5 146 / 10%);
+            opacity: 1;
             color: black;
             border: 1px solid purple;
             border-radius: 4%;
@@ -312,10 +374,21 @@ header {
 // CSS de Aside derecha ANGEL
 
 .aside2 {
-    background-color: green;
+    background-color: whitesmoke;
     flex: 1;
     flex-grow: 2;
     min-width: 25%;
+}
+
+.contenedor1 {
+
+    background-color: whitesmoke;
+    margin: 0 20px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1px;
+
+
 }
 
 // CSS Botones ROMAN
