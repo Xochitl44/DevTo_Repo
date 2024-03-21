@@ -230,8 +230,43 @@ header ul a {
   }
 }
 .aside2 {
-  background-color: green;
+  background-color: rgb(233, 233, 233);
   flex: 1;
-  flex-grow: 2;
-  min-width: 25%;
-}/*# sourceMappingURL=main.css.map */
+  flex-grow: 1;
+  min-width: 20%;
+}
+.aside2 .card {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.aside2 .card .cardContent {
+  padding: 10px;
+  margin: 10px;
+}
+.aside2 .card h3 {
+  font-weight: lighter;
+}
+
+.parrafo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 25px;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.contenedores {
+  margin-bottom: 1px solid #3e3e3e;
+}
+
+.contenedor1 {
+  background-color: whitesmoke;
+  margin: 0.5px;
+  text-align: justify;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
