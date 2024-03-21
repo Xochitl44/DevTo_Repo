@@ -312,10 +312,24 @@ header {
 // CSS de Aside derecha ANGEL
 
 .aside2 {
-    background-color: green;
+    background-color: whitesmoke;
     flex: 1;
     flex-grow: 2;
     min-width: 25%;
+    text-align: justify;
 }
+
+.contenedor1 {
+    
+    background-color: whitesmoke;
+    margin: .5px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1px;
+
+    
+}
+
+
 
 // CSS Botones ROMAN
