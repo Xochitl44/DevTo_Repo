@@ -1,5 +1,5 @@
 // Aqui van las variables
-$body-bg-color: rgb(233, 233, 233);
+$body-bg-color: rgb(245, 245, 245);
 $card-bg-color: white;
 $card-list-margin-bottom: 10px;
 
@@ -26,12 +26,99 @@ body {
     display: flex;
     width: 100%;
     min-height: 100vh;
-
 }
 
 
 
+
 // CSS de NavBar DAVID
+
+nav {
+    width: 100%;
+    max-width: 1300px;
+    //margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.devSearchFlex {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.containerSearch {
+    top: 10px;
+    left: 85px;
+}
+
+.inputDiv {
+    position: relative;
+    margin-left: 10px;
+}
+
+.lupaDiv {
+    position: absolute;
+    left: 630px;
+    top: 22px;
+
+}
+
+.logoDev {
+    height: 50px;
+    width: 60px;
+}
+
+.searchBar {
+    height: 40px;
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.buttonLogIn2 {
+    border: none;
+    background: transparent;
+    font-family: $font-family;
+    margin-right: 14px;
+    height: 38px;
+    width: 80px;
+
+}
+
+.buttonLogIn2:hover {
+    background: rgb(234, 241, 252);
+    opacity: 1;
+    color: blue;
+    border: none;
+    border-radius: 8%;
+    text-decoration: underline;
+}
+
+.btnAcc2 {
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: $body-bg-color;
+    color: blue;
+    height: 38px;
+    width: 128px;
+    font-weight: bold;
+}
+
+.btnAcc2:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+}
+
+.navBarBtns {
+    margin-left: auto;
+}
+
 
 
 // CSS de Aside izquierda AKIRA
@@ -105,6 +192,44 @@ div {
         }
     }
 }
+
+//buttons Create Account and Log in de Aside 1
+.buttonLogIn {
+    border: none;
+    background: transparent;
+    font-family: $font-family;
+    margin-right: 14px;
+    height: 38px;
+    width: 100%;
+
+}
+
+.buttonLogIn:hover {
+    background: rgb(234, 241, 252);
+    opacity: 1;
+    color: blue;
+    border: none;
+    border-radius: 8%;
+    text-decoration: underline;
+}
+
+.btnAcc {
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: $body-bg-color;
+    color: blue;
+    height: 38px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btnAcc:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+}
+
+//fin de buttons
 
 
 // CSS de Main XOCHITL
@@ -215,7 +340,86 @@ header {
         gap: 15px;
         margin: 0 8px;
 
-        .btn {
+        .btnGreen {
+            border: none;
+            height: 30px;
+            background: transparent;
+            font-family: $font-family;
+
+            .btnColorGreen {
+                color: green;
+            }
+        }
+
+        .btnGreen:hover {
+            background: rgba(52, 238, 39, 0.1);
+            opacity: 1;
+            color: black;
+            border: 1px solid green;
+            border-radius: 6%;
+        }
+
+        .btnBlue {
+            border: none;
+            height: 30px;
+            background: transparent;
+            font-family: $font-family;
+
+            .btnColorBlue {
+                color: blue;
+            }
+        }
+
+        .btnBlue:hover {
+            background: rgba(63, 60, 240, 0.1);
+            opacity: 1;
+            color: black;
+            border: 1px solid blue;
+            border-radius: 6%;
+        }
+
+        .btnRed {
+            border: none;
+            height: 30px;
+            background: transparent;
+            font-family: $font-family;
+
+            .btnColorRed {
+                color: red;
+            }
+        }
+
+        .btnRed:hover {
+            background: rgba(243, 47, 33, 0.1);
+            opacity: 1;
+            color: black;
+            border: 1px solid red;
+            border-radius: 6%;
+        }
+
+        .btnYellow {
+            border: none;
+            height: 30px;
+            background: transparent;
+            font-family: $font-family;
+
+            .btnColorYellow {
+                color: yellow;
+            }
+        }
+
+        .btnYellow:hover {
+            background: rgba(240, 213, 10, 0.1);
+            opacity: 1;
+            color: black;
+            border: 1px solid yellow;
+            border-radius: 6%;
+        }
+
+
+    }
+
+    /*.btn {
             border: none;
             height: 30px;
             background: transparent;
@@ -227,13 +431,13 @@ header {
         }
 
         .btn:hover {
-            background: purple;
-            opacity: 40%;
+            background: rgb(130 5 146 / 10%);
+            opacity: 1;
             color: black;
             border: 1px solid purple;
-            border-radius: 4%;
+            border-radius: 8%;
         }
-    }
+    }*/
 
     .reactions {
         margin-left: 20px;
@@ -296,18 +500,35 @@ header {
 
 @media screen and (max-width:768px) {
 
+
     .reactionsHide,
-    .commentsHide {
+    .commentsHide,
+    .aside1,
+    .aside2,
+    .containerSearch,
+    .buttonLogIn2 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .aside1 {
+        display: block;
+    }
+
+    .aside2 {
         display: none;
     }
 }
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:1024px) {
+    .aside2 {
+        display: block;
+    }
+}
 
-
-@media screen and (min-width:1024px) {}
-
-@media screen and (min-width:1910px) {}
 
 // CSS de Aside derecha ANGEL
 
@@ -316,21 +537,25 @@ header {
     flex: 1;
     flex-grow: 1;
     min-width: 20%;
+
     .card {
         background-color: $card-bg-color;
         border: 2px solid #ccc;
-        border-radius: 0px;
+        border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
         .cardContent {
             padding: 10px;
             margin: 10px;
         }
+
         h3 {
             font-weight: lighter;
         }
     }
 }
+
 .parrafo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 25px;
@@ -338,13 +563,13 @@ header {
     font-weight: lighter;
 
 }
-.contenedores {
-    margin-bottom: 1px solid  #3e3e3e;
 
+.contenedores {
+    border-bottom: 1px solid #eeebeb;
 }
 
 .contenedor1 {
-    
+
     background-color: whitesmoke;
     margin: .5px;
     text-align: justify;
@@ -352,7 +577,7 @@ header {
     margin-bottom: 1px;
     margin-left: 10px;
     margin-right: 10px;
-    
+
 }
 
 
