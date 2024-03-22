@@ -500,37 +500,86 @@ header {
 
 @media screen and (max-width:768px) {
 
+
     .reactionsHide,
-    .commentsHide {
+    .commentsHide,
+    .aside1,
+    .aside2,
+    .containerSearch,
+    .buttonLogIn2 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .aside1 {
+        display: block;
+    }
+
+    .aside2 {
         display: none;
     }
 }
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:1024px) {
+    .aside2 {
+        display: block;
+    }
+}
 
-
-@media screen and (min-width:1024px) {}
-
-@media screen and (min-width:1910px) {}
 
 // CSS de Aside derecha ANGEL
 
 .aside2 {
-    background-color: whitesmoke;
+    background-color: $body-bg-color;
     flex: 1;
-    flex-grow: 2;
-    min-width: 25%;
+    flex-grow: 1;
+    min-width: 20%;
+
+    .card {
+        background-color: $card-bg-color;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .cardContent {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h3 {
+            font-weight: lighter;
+        }
+    }
+}
+
+.parrafo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 25px;
+    font-size: large;
+    font-weight: lighter;
+
+}
+
+.contenedores {
+    border-bottom: 1px solid #eeebeb;
 }
 
 .contenedor1 {
 
     background-color: whitesmoke;
-    margin: 0 20px;
+    margin: .5px;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 1px;
-
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
+
+
 
 // CSS Botones ROMAN
